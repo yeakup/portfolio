@@ -38,7 +38,7 @@ const Contact = () => {
       id="contact" 
       className="min-h-screen py-20 relative overflow-hidden"
       style={{
-        backgroundImage: `url('/bg.png')`,
+        backgroundImage: `url('/peronal-website/bg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -205,6 +205,7 @@ const Contact = () => {
 }
 
 export default Contact
+
 
 
 

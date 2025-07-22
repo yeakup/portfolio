@@ -4,7 +4,7 @@ const About = () => {
       id="about" 
       className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundImage: `url('/bg.png')`,
+        backgroundImage: `url('${import.meta.env.BASE_URL}bg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -16,8 +16,8 @@ const About = () => {
           {/* Avatar */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/avatar.png" 
-              alt="John Doe" 
+              src="/peronal-website/avatar.png" 
+              alt="Jakub Bugyi" 
               className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48"
             />
           </div>
@@ -67,6 +67,9 @@ const About = () => {
 }
 
 export default About
+
+
+
 
 
 
