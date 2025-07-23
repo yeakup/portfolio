@@ -63,7 +63,7 @@ const Contact = () => {
             <h3 className="text-3xl font-bold text-white mb-8">Let's Connect</h3>
             <p className="text-white/70 mb-12 leading-relaxed text-lg">
               I'm always interested in new opportunities and exciting projects. 
-              Feel free to reach out if you'd like to work together or just want to say hello!
+              Feel free to reach out if you'd like to work together!
             </p>
             
             <div className="space-y-8">

@@ -44,10 +44,11 @@ const About = () => {
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 sm:mb-8 font-light tracking-wide">
             I build and test your apps!
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-12 font-light px-4">
-            Passionate software developer/QA engineer with expertise in modern web technologies. 
-            I create beautiful, functional, and user-friendly applications that solve real-world problems.
+          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-12 font-light px-4" style={{ color: '#6A9955' }}>
+            /* Passionate software developer/QA engineer with expertise in modern web technologies.
+            I create beautiful, functional, and user-friendly applications that solve real-world problems. */
           </p>
+
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
             <button 

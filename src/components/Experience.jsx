@@ -5,28 +5,35 @@ const Experience = () => {
       company: "Gen Digital",
       period: "2024 - Present",
       year: "2024",
-      technologies: ["Javascript", "Python", "Cypress", "Playwright", "SQL", "HTML", "CSS"]
+      technologies: ["Javascript", "Python", "Cypress", "Playwright", "SQL", "HTML", "CSS", "Postman"]
     },
     {
       title: "Senior Software QA Engineer",
       company: "Avast Software",
       period: "2023 - 2024",
       year: "2023",
-      technologies: ["Javascript", "Python", "Cypress", "Playwright", "SQL", "HTML", "CSS"]
+      technologies: ["Javascript", "Python", "Cypress", "Playwright", "SQL", "HTML", "CSS", "Postman"]
     },
     {
       title: "Software QA Engineer",
       company: "Avast Software",
       period: "2022 - 2023",
       year: "2022",
-      technologies: ["Javascript", "Python", "Cypress", "Playwright", "SQL", "HTML", "CSS"]
+      technologies: ["Javascript", "Python", "Cypress", "SQL", "HTML", "CSS", "Postman"]
+    },
+    {
+      title: "IT Software/Technology Tester",
+      company: "Tatra banka",
+      period: "2022 - 2022",
+      year: "2022",
+      technologies: ["Python", "Robot Framework", "SQL", "HTML", "CSS", "Postman"]
     },
     {
       title: "Internship at IT Department",
       company: "Dell Technologies",
       period: "2019 - 2022",
       year: "2019",
-      technologies: ["Javascript", "Python", "Cypress", "Playwright", "SQL", "HTML", "CSS"],
+      technologies: ["Python", "SQL", "HTML", "CSS", "Excel"],
       isInternship: true
     }
   ]
@@ -36,6 +43,7 @@ const Experience = () => {
       'Javascript': 'bg-yellow-500/20 border-yellow-400/40 text-yellow-200',
       'Python': 'bg-green-500/20 border-green-400/40 text-green-200',
       'Cypress': 'bg-emerald-500/20 border-emerald-400/40 text-emerald-200',
+      'Robot Framework': 'bg-yellow-500/20 border-yellow-400/40 text-yellow-200',
       'Playwright': 'bg-purple-500/20 border-purple-400/40 text-purple-200',
       'SQL': 'bg-blue-500/20 border-blue-400/40 text-blue-200',
       'HTML': 'bg-red-500/20 border-red-400/40 text-red-200',
@@ -72,8 +80,8 @@ const Experience = () => {
                 }`}>
                   <div className="flex items-center justify-between mb-2">
                     {index === 0 ? (
-                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
-                        CURRENT
+                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-xs shadow-lg animate-pulse">
+                        current job
                       </div>
                     ) : (
                       <div></div>
