@@ -83,7 +83,7 @@ const Contact = () => {
               </a>
               
               <a 
-                href="https://linkedin.com/in/jakub.bugyi" 
+                href="https://linkedin.com/in/jakub-bugyi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center group cursor-pointer hover:bg-white/10 rounded-2xl p-4 -m-4 transition-all duration-300"

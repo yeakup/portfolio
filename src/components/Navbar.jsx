@@ -55,7 +55,7 @@ const Navbar = ({ activeSection }) => {
           {/* Social icons on the right */}
           <div className="flex space-x-3">
             <a 
-              href="https://linkedin.com/in/jakubbugyi" 
+              href="https://linkedin.com/in/jakub-bugyi" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-8 h-8 bg-white/10 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300"
