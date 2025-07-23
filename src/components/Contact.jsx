@@ -95,7 +95,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-white/60 text-sm">LinkedIn</p>
-                  <p className="text-white text-lg font-medium">linkedin.com/in/jakub.bugyi</p>
+                  <p className="text-white text-lg font-medium">linkedin.com/in/jakub-bugyi</p>
                 </div>
                 <div className="ml-4">
                   <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
