@@ -16,7 +16,7 @@ const About = () => {
           {/* Avatar */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/peronal-website/avatar.png" 
+              src="/avatar.png" 
               alt="Jakub Bugyi" 
               className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48"
             />
