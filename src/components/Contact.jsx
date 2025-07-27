@@ -79,7 +79,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-white/60 text-sm">Email</p>
-                  <p className="text-white text-lg font-medium">jakub.bugyi97@gmail.com</p>
+                  <p className="text-white text-lg font-medium">me@jakubbugyi.dev</p>
                 </div>
               </a>              
               {/* LinkedIn */}
