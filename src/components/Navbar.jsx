@@ -117,32 +117,60 @@ const Navbar = ({ activeSection }) => {
             </a>
           </div>
         </div>
-        {/* Mobile dropdown menu */}
         {mobileMenuOpen && (
-          <div
-            className="md:hidden absolute left-0 right-0 mt-2 rounded-2xl shadow-2xl py-4 flex flex-col items-center space-y-2 z-50"
-            style={{
-              backgroundColor: 'rgba(0, 0, 0, 0.3)',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255,255,255,0.2)',
-            }}
-          >
-            {navItems.map(item => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`w-11/12 px-4 py-3 rounded-full text-base font-normal transition-all duration-300 border ${
-                  activeSection === item.id 
-                    ? 'bg-white/20 backdrop-blur-xl border-white/30 text-white shadow-lg' 
-                    : 'text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-xl border-white/20 hover:border-white/30'
-                }`}
-              >
-                {activeSection === item.id ? `// ${item.label}` : item.label}
-              </button>
-            ))}
-          </div>
-        )}
+  <>
+    {/* Fullscreen blur overlay */}
+    <div
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        zIndex: 9998,
+        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+        pointerEvents: 'none' // allows clicks to pass through if needed
+      }}
+    />
+
+    {/* Dropdown menu */}
+    <div
+      style={{
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        marginTop: '0.5rem',
+        zIndex: 9999,
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        borderRadius: '1rem',
+        boxShadow: '0 8px 40px rgba(0, 0, 0, 0.5)',
+        paddingTop: '1rem',
+        paddingBottom: '1rem',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '0.5rem'
+      }}
+    >
+      {navItems.map(item => (
+        <button
+          key={item.id}
+          onClick={() => scrollToSection(item.id)}
+          className={`w-11/12 px-4 py-3 rounded-full text-base font-normal transition-all duration-300 border ${
+            activeSection === item.id
+              ? 'bg-white/20 border-white/30 text-white shadow-lg'
+              : 'text-white/80 hover:text-white hover:bg-white/10 border-white/20 hover:border-white/30'
+          }`}
+        >
+          {activeSection === item.id ? `// ${item.label}` : item.label}
+        </button>
+      ))}
+    </div>
+  </>
+)}
       </div>
     </div>
   )
