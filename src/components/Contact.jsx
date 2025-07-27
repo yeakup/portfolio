@@ -58,7 +58,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-10 border border-white/10 shadow-2xl">
             <h3 className="text-3xl font-bold text-white mb-8">Let's Connect</h3>
             <p className="text-white/70 mb-12 leading-relaxed text-lg">
@@ -67,6 +67,7 @@ const Contact = () => {
             </p>
             
             <div className="space-y-8">
+              {/* Email */}
               <a 
                 href="mailto:jakub.bugyi97@gmail.com"
                 className="flex items-center group cursor-pointer hover:bg-white/10 rounded-2xl p-4 -m-4 transition-all duration-300"
@@ -80,8 +81,8 @@ const Contact = () => {
                   <p className="text-white/60 text-sm">Email</p>
                   <p className="text-white text-lg font-medium">jakub.bugyi97@gmail.com</p>
                 </div>
-              </a>
-              
+              </a>              
+              {/* LinkedIn */}
               <a 
                 href="https://linkedin.com/in/jakub-bugyi" 
                 target="_blank" 
@@ -97,13 +98,9 @@ const Contact = () => {
                   <p className="text-white/60 text-sm">LinkedIn</p>
                   <p className="text-white text-lg font-medium">linkedin.com/in/jakub-bugyi</p>
                 </div>
-                <div className="ml-4">
-                  <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </div>
               </a>
-              
+
+              {/* GitHub */}
               <a 
                 href="https://github.com/jakub.bugyi" 
                 target="_blank" 
@@ -118,11 +115,6 @@ const Contact = () => {
                 <div className="flex-1">
                   <p className="text-white/60 text-sm">GitHub</p>
                   <p className="text-white text-lg font-medium">github.com/jakub.bugyi</p>
-                </div>
-                <div className="ml-4">
-                  <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
                 </div>
               </a>
             </div>
@@ -205,21 +197,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
