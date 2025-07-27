@@ -119,15 +119,15 @@ const Navbar = ({ activeSection }) => {
         </div>
         {/* Mobile dropdown menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute left-0 right-0 mt-2 bg-white/30 backdrop-blur-2xl rounded-2xl shadow-2xl py-4 flex flex-col items-center space-y-2 z-50">
+          <div className="md:hidden absolute left-0 right-0 mt-2 bg-black/70 backdrop-blur-2xl rounded-2xl shadow-2xl py-4 flex flex-col items-center space-y-2 z-50">
             {navItems.map(item => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`w-11/12 px-4 py-3 rounded-full text-base font-normal transition-all duration-300 border ${
                   activeSection === item.id 
-                    ? 'bg-white/20 backdrop-blur-xl border-white/30 text-black shadow-lg' 
-                    : 'text-black/80 hover:text-black hover:bg-white/40 backdrop-blur-xl border-white/20 hover:border-white/30'
+                    ? 'bg-white/20 backdrop-blur-xl border-white/30 text-white shadow-lg' 
+                    : 'text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-xl border-white/20 hover:border-white/30'
                 }`}
               >
                 {activeSection === item.id ? `// ${item.label}` : item.label}
