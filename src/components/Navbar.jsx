@@ -119,7 +119,15 @@ const Navbar = ({ activeSection }) => {
         </div>
         {/* Mobile dropdown menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute left-0 right-0 mt-2 bg-black/70 backdrop-blur-2xl rounded-2xl shadow-2xl py-4 flex flex-col items-center space-y-2 z-50">
+          <div
+            className="md:hidden absolute left-0 right-0 mt-2 rounded-2xl shadow-2xl py-4 flex flex-col items-center space-y-2 z-50"
+            style={{
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)',
+              border: '1px solid rgba(255,255,255,0.2)',
+            }}
+          >
             {navItems.map(item => (
               <button
                 key={item.id}
